@@ -27,12 +27,11 @@ def gcd_by_factors(num1: int, num2: int) -> int:
     """Calcs the gcd using the list of dividers
 
     Args:
-        num1: num1 An integer number > 0
-        num2: num1 An integer number > 0
+        num1: An integer number > 0
+        num2: An integer number > 0
 
     Returns:
         The result of gcd.
-
     """
 
     first_divisors = divisors(num1)
@@ -45,8 +44,8 @@ def gcd_by_euclid(num1: int, num2: int) -> int:
     """Calcs the gcd by Euclidian Algorithm
 
     Args:
-        num1: num1 An integer number > 0
-        num2: num1 An integer number > 0
+        num1: An integer number > 0
+        num2: An integer number > 0
 
     Returns:
         The result of gcd.  
