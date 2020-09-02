@@ -1,21 +1,22 @@
-"""
-    Playing around with 'gcd function' implementations.
+"""Playing around with 'gcd function' implementations.
 
-    Features included in this module:
-        - Console Input / Output;
-        - Function Definition;
-        - Type Definition ('Type Hints');
-        - Module Import;
-        - String Interpolation ('fstrings');
-        - String Padding;
-        - Type Conversion;
-        - Destructuring Assignment;
-        - Set Intersection Operator ('&');
-        - Max built-in function;
-        - Built-in Math Library;
-        - While loop;
-        - Modulus / remainder operator ('%');
-        - Docstrings;
+Features included in this module:
+    - Console Input / Output;
+    - Function Definition;
+    - Type Definition ('Type Hints');
+    - Module Import;
+    - Tuple literal values;
+    - 'Spread'/'Unpack'/'Splat' Operator ('*');
+    - String Interpolation;
+    - String Padding;
+    - Type Conversion;
+    - Destructuring Assignment;
+    - Set Intersection Operator ('&');
+    - Max built-in function;
+    - Built-in Math Library;
+    - While loop;
+    - Modulus / remainder operator ('%');
+    - Docstrings ('Google Python Style Guide');
 """
 
 from math import gcd
@@ -23,7 +24,17 @@ from divisors import divisors
 
 
 def gcd_by_factors(num1: int, num2: int) -> int:
-    """Calcs the gcd getting the list of divisors"""
+    """Calcs the gcd using the list of dividers
+
+    Args:
+        num1: num1 An integer number > 0
+        num2: num1 An integer number > 0
+
+    Returns:
+        The result of gcd.
+
+    """
+
     first_divisors = divisors(num1)
     second_divisors = divisors(num2)
 
@@ -31,16 +42,33 @@ def gcd_by_factors(num1: int, num2: int) -> int:
 
 
 def gcd_by_euclid(num1: int, num2: int) -> int:
-    """Calcs the gcd by Euclidian Algorithm"""
+    """Calcs the gcd by Euclidian Algorithm
+
+    Args:
+        num1: num1 An integer number > 0
+        num2: num1 An integer number > 0
+
+    Returns:
+        The result of gcd.  
+    """
+
     while num2:
         num1, num2 = num2, num1 % num2
-
     return num1
 
 
 first_number = int(input("Type the first number: "))
 second_number = int(input("Type the second number: "))
 
-print(f"\n{ 'GCD by factors:'.ljust(16) }  { gcd_by_factors(first_number, second_number) }")
-print(f"{ 'GCD by Euclid:'.ljust(16) }  { gcd_by_euclid(first_number, second_number) }")
-print(f"{ 'GCD by Math Lib:'.ljust(16) }  { gcd(first_number, second_number) }")
+factors_gcd = ('GCD by factors', gcd_by_factors(first_number, second_number))
+euclidian_gcd = ('GCD by Euclid', gcd_by_euclid(first_number, second_number))
+math_gcd = ('GCD by Math Lib', gcd(first_number, second_number))
+
+# Latest Style with f-strings
+print(f'\n{factors_gcd[0]:15}: {factors_gcd[1]}')
+
+# New Style with format function
+print("{:15}: {}".format(*euclidian_gcd))
+
+# Old / Classic Style with '%' operator
+print('%-15s: %d' % math_gcd)
