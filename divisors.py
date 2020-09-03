@@ -7,6 +7,8 @@ Features included in this module:
     - Module Import;
     - String Interpolation ('fstrings');
     - String Padding;
+    - String Join;
+    - Map function;
     - Type Conversion;
     - Lambda expressions;
     - For..in loop;
@@ -51,5 +53,5 @@ if __name__ == '__main__':
     # but allows execution when calling the script.
 
     input_number = int(input("Type a integer number > 0: "))
-    print(f"{ 'Divisors from Function'.ljust(22) } = { divisors(input_number) }")
-    print(f"{ 'Divisors from Lambda'.ljust(22) } = { divisors_from_lambda(input_number) }")
+    print(f"{ 'Divisors from Function'.ljust(22) } = {{ { ', '.join(map(str, divisors(input_number))) } }}")
+    print(f"{ 'Divisors from Lambda'.ljust(22) } = {{ { ', '.join(map(str, divisors_from_lambda(input_number))) } }}")

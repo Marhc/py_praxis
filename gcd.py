@@ -8,7 +8,7 @@ Features included in this module:
     - Tuple literal values;
     - Dictionary literal values;
     - 'Spread'/'Unpack'/'Splat' Operator ('*');
-    - String Interpolation;
+    - Interpolation / Substitution of strings;
     - String Padding;
     - Type Conversion;
     - Destructuring Assignment;
