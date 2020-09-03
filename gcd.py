@@ -69,7 +69,7 @@ euclidian_gcd = ('GCD by Euclid', gcd_by_euclid(first_number, second_number))
 math_gcd = ('GCD by Math Lib', gcd(first_number, second_number))
 
 # Latest Style with f-strings
-print(f'\n{factors_gcd['label']:15}: {factors_gcd['value']}')
+print(f"\n{factors_gcd['label']:15}: {factors_gcd['value']}")
 
 # New Style with format function
 print("{:15}: {}".format(*euclidian_gcd))
