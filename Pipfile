@@ -7,6 +7,8 @@ verify_ssl = true
 build-docs = "sh -c 'sphinx-apidoc -f -o ./docs/source ./ && cd docs && make html'"
 
 [dev-packages]
+sphinx = "*"
+sphinx-rtd-theme = "*"
 
 [packages]
 
