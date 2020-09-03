@@ -6,6 +6,7 @@ Features included in this module:
     - Type Definition ('Type Hints');
     - Module Import;
     - Tuple literal values;
+    - Dictionary literal values;
     - 'Spread'/'Unpack'/'Splat' Operator ('*');
     - String Interpolation;
     - String Padding;
@@ -59,12 +60,16 @@ def gcd_by_euclid(num1: int, num2: int) -> int:
 first_number = int(input("Type the first number: "))
 second_number = int(input("Type the second number: "))
 
-factors_gcd = ('GCD by factors', gcd_by_factors(first_number, second_number))
+factors_gcd = {
+    'label': 'GCD by factors',
+    'value': gcd_by_factors(first_number, second_number)
+}
+
 euclidian_gcd = ('GCD by Euclid', gcd_by_euclid(first_number, second_number))
 math_gcd = ('GCD by Math Lib', gcd(first_number, second_number))
 
 # Latest Style with f-strings
-print(f'\n{factors_gcd[0]:15}: {factors_gcd[1]}')
+print(f'\n{factors_gcd['label']:15}: {factors_gcd['value']}')
 
 # New Style with format function
 print("{:15}: {}".format(*euclidian_gcd))
