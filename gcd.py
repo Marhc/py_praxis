@@ -1,23 +1,23 @@
-"""Playing around with 'gcd function' implementations.
+"""Playing around with **'gcd function'** implementations.
 
 Features included in this module:
     - Console Input / Output;
     - Function Definition;
-    - Type Definition ('Type Hints');
+    - Type Definition (**'Type Hints'**);
     - Module Import;
     - Tuple literal values;
     - Dictionary literal values;
-    - 'Spread'/'Unpack'/'Splat' Operator ('*');
+    - 'Spread'/'Unpack'/'Splat' Operator (**'*'**);
     - Interpolation / Substitution of strings;
     - String Padding;
     - Type Conversion;
     - Destructuring Assignment;
-    - Set Intersection Operator ('&');
+    - Set Intersection Operator (**'&'**);
     - Max built-in function;
     - Built-in Math Library;
     - While loop;
-    - Modulus / remainder operator ('%');
-    - Docstrings ('Google Python Style Guide');
+    - Modulus / remainder operator (**'%'**);
+    - Docstrings (**'Google Python Style Guide'**);
 """
 
 from math import gcd

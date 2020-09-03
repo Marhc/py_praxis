@@ -1,4 +1,4 @@
-"""A simple "Hello Function" for educational purposes.
+"""A simple **"Hello Function"** for educational purposes.
 
 This module explores basic features of the Python programming language.
 
@@ -7,14 +7,14 @@ Features included in this module:
     - Function Definition;
     - Module Import;
     - Default Parameter Values;
-    - String Interpolation ('fstrings');
+    - String Interpolation (**'fstrings'**);
     - Single line and Multiline comments;
-    - Docstrings ('Google Python Style Guide');
-    - 'Falsy' coalescing operator ('or');
+    - Docstrings (**'Google Python Style Guide'**);
+    - 'Falsy' coalescing operator (**'or'**);
     - Conditional Statements;
     - Custom main entry point and exit point;
     - Private function naming convention;
-    - Special, 'dunder' or 'magic' variables;
+    - Special, **'dunder'** or **'magic'** variables;
     - Command line arguments handling;
 """
 
@@ -25,7 +25,7 @@ def hello_user(name=""):
     """Returns a greeting message with the user name.
 
     This is an example of a parameterized function with a default value.
-    If no name is provided the function returns "Hello Everyone!" by default.
+    If no name is provided the function returns **"Hello Everyone!"** by default.
 
     Args:
         name (str): The user name typed in the Console. 

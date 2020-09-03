@@ -1,19 +1,19 @@
-"""Solving the classic FizzBuzz challenge.
+"""Solving the classic **FizzBuzz** challenge.
 
 This example implements FizzBuzz as a function. 
 
 Features included in this module:
     - Console Output;
     - Function Definition;
-    - Type Definition ('Type Hints');
-    - String Interpolation ('fstrings');
-    - Docstrings ('Google Python Style Guide');
+    - Type Definition (**'Type Hints'**);
+    - String Interpolation (**'fstrings'**);
+    - Docstrings (**'Google Python Style Guide'**);
     - Single line and Multiline comments;
     - Conditional Statements;
-    - For..in loop;
+    - **'For..in'** loop;
     - Ranges;
-    - Modulus / remainder operator ('%');
-    - Special, 'dunder' or 'magic' variables;
+    - Modulus / remainder operator (**'%'**);
+    - Special, **'dunder'** or **'magic'** variables;
 """
 
 

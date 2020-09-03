@@ -1,26 +1,26 @@
-"""This is a playground with a 'proper divisors' function.
+"""This is a playground with a **'proper divisors'** function.
 
 Features included in this module:
     - Console Input / Output;
     - Function Definition;
-    - Type Definition ('Type Hints');
+    - Type Definition (**'Type Hints'**);
     - Module Import;
-    - String Interpolation ('fstrings');
+    - String Interpolation (**'fstrings'**);
     - String Padding;
     - String Join;
     - Map function;
     - Type Conversion;
     - Lambda expressions;
-    - For..in loop;
-    - Modulus / remainder operator ('%');
+    - **'For..in'** loop;
+    - Modulus / remainder operator (**'%'**);
     - Ranges;
     - Conditional Statements;
-    - Literal notation for Lists ('List literal values');
+    - Literal notation for Lists (**'List literal values'**);
     - List Comprehension;
     - Single line and Multiline comments;
-    - Docstrings ('Google Python Style Guide');
+    - Docstrings (**'Google Python Style Guide'**);
     - Comment-Docstrings;
-    - Special, 'dunder' or 'magic' variables;
+    - Special, **'dunder'** or **'magic'** variables;
 """
 
 from typing import List
