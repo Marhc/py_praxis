@@ -11,7 +11,6 @@ Features included in this module:
     - Single line and Multiline comments;
     - Docstrings (**'Google Python Style Guide'**);
     - 'Falsy' coalescing operator (**'or'**);
-    - Ternary operator (**'..if..else..'**);
     - Conditional Statements;
     - Custom main entry point and exit point;
     - Private function naming convention;
@@ -41,7 +40,7 @@ def hello_user(name=""):
 def _custom_main(argv):  # Python has no a default main entry point.
     """Example of a custom main function with command line arguments handling."""
 
-    user_name = argv[1] if len(argv) > 1 else input("Type your name: ")
+    user_name = (argv + [""])[1] or input("Type your name: ")
     print(hello_user(user_name))
 
 
