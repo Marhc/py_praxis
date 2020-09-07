@@ -40,6 +40,7 @@ def hello_user(name=""):
 def _custom_main(argv):  # Python has no a default main entry point.
     """Example of a custom main function with command line arguments handling."""
 
+    # Avoids an exception if no args. Ternary Operator is more explicit and longer.
     user_name = (argv + [""])[1] or input("Type your name: ")
     print(hello_user(user_name))
 
